@@ -1,0 +1,317 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#cell {
+  height:400px;
+  width: 600px;
+  Position: relative;
+  background-color: rgb(202, 255, 222);
+  /* border: solid 10px rgb(255, 0, 212);
+  border-radius: 40px; */
+  /* Add image styling */
+  background-image: url('./assets/images/cell.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mechanism-container {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.mechanism-container:hover {
+  cursor: pointer;
+  transition: 2s;
+  transform: scale(1.1);
+}
+
+.mechanism-container:hover .information-popup {
+  display: block;
+}
+
+.information-popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 135px;
+  min-height: 25px; 
+  padding: 20px;
+  border-radius: 5px;
+  color: rgb(25, 74, 14);
+  background-color: rgb(252, 240, 240);
+  box-shadow: 0 2px 5px rgba(0, 204, 51);
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+#folic-acid-synthesis-and-reduction,
+#membrane-integrity,
+#cell-wall-synthesis,
+#DNA-integrity,
+#mrna-synthesis,
+#Gryase,
+#protein-synthesis {
+  position: absolute;
+}
+
+#folic-acid-synthesis-and-reduction {
+  top: 5%;
+  left: -30%;
+  background-color: rgb(0, 204, 51);
+}
+
+#membrane-integrity {
+  top: 55%;
+  left: -35%;
+  background-color: rgb(255, 204, 188);
+}
+
+#cell-wall-synthesis {
+  top: 65%;
+  left: -20%;
+  background-color: rgb(239, 154, 154);
+}
+
+#DNA-integrity {
+  top: -8%;
+  left: 9%;
+  background-color: rgb(89, 126, 165);
+}
+
+#mrna-synthesis {
+  top: 35%;
+  left: 100%;
+  background-color: rgb(253, 200, 53);
+}
+
+#Gryase {
+  top: 0%;
+  left: 90%;
+  background-color: rgb(186, 104, 200);
+}
+
+#protein-synthesis {
+  top: 70%;
+  left: 100%;
+  background-color: rgb(0, 191, 165);
+}
+
+.cell-wall {
+  background-color: rgb(215,183,188);
+  color: rgb(56, 43, 25);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight:bold;
+}
+
+div.a {
+  font-weight: bold;
+}
+
+#folic-acid-star{
+  position:absolute; 
+  font-size: 40px;
+  color: rgb(0, 204, 51);
+  top: 80px;
+  left: 100px;
+}
+ 
+#dna-integrity-star{
+  position:absolute; 
+  font-size: 40px;
+  color: rgb(89	126	165);
+  top: 50px;
+  left: 200px;
+}
+#mrna-synthesis-star{
+  position:absolute; 
+  font-size: 40px;
+  color: rgb(253, 200, 53);
+  top: 185px;
+  left: 400px;
+}
+#gryase-star{
+  position:absolute; 
+  font-size: 40px;
+  color: rgb(186, 104, 200);
+  top: 60px;
+  left: 450px;
+}
+#protein-synthesis-star{
+  position:absolute; 
+  font-size: 40px;
+  color: rgb(0, 191, 165);
+  top: 260px;
+  left: 440px;
+}
+#cell-wall-star{
+  position:absolute; 
+  font-size: 40px;
+  color: rgb(239, 154, 154);
+  top: 350px;
+  left: 110px;
+}
+#membrane-integrity-star{
+  position:absolute; 
+  font-size: 40px;
+  color: rgb(255, 204, 188);
+  top: 300px;
+  left: 110px;
+}
+#mechanism{
+  position: absolute;
+  padding: 20px;
+}
+#protein-synthesis-pop-up {
+  display: none;
+  position: absolute;
+  top: -500%;
+  left: 45%;
+  width: 250px;
+  min-height: 25px; 
+  padding: 20px;
+  border-radius: 5px;
+  color: rgb(25, 74, 14);
+  background-color: rgb(252, 240, 240);
+  box-shadow: 0 2px 5px rgba(0, 191, 165);
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.mechanism-container:hover #protein-synthesis-pop-up {
+  display: block;
+}
+
+#cell-wall-synthesis-pop-up {
+  display: none;
+  position: absolute;
+  top: -550%;
+  left: -180%;
+  width: 240px;
+  min-height: 25px; 
+  padding: 20px;
+  border-radius: 5px;
+  color: rgb(25, 74, 14);
+  background-color: rgb(252, 240, 240);
+  box-shadow: 0 2px 5px rgba(239, 154, 154);
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.mechanism-container:hover #cell-wall-synthesis-pop-up{
+  display: block;
+}
+
+#membrane-integrity-pop-up {
+  display: none;
+  position: absolute;
+  top: -100%;
+  left: 0%;
+  width: 100px;
+  min-height: 10px; 
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(25, 74, 14);
+  background-color: rgb(252, 240, 240);
+  box-shadow: 0 2px 5px rgba(255, 204, 188);
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.mechanism-container:hover #membrane-integrity-pop-up {
+  display: block;
+}
+
+#dna-pop-up {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 100px;
+  min-height: 10px; 
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(25, 74, 14);
+  background-color: rgb(252, 240, 240);
+  box-shadow: 0 2px 5px rgba(25, 74, 141, 1);
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.mechanism-container:hover #dna-pop-up {
+  display: block;
+}
+
+#gyrase-pop-up {
+  display: none;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 130px;
+  min-height: 10px; 
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(25, 74, 14);
+  background-color: rgb(252, 240, 240);
+  box-shadow: 0 2px 5px rgba(186, 104, 200);
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.mechanism-container:hover #gyrase-pop-up{
+  display: block;
+}
+
+#mrna-pop-up {
+  display: none;
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  width: 90px;
+  min-height: 10px; 
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(25, 74, 14);
+  background-color: rgb(252, 240, 240);
+  box-shadow: 0 2px 5px rgba(253, 200, 53);
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.mechanism-container:hover #mrna-pop-up{
+  display: block;
+}
+
+h1 { position: absolute; 
+  top: -2%; 
+  width: fit-content; 
+  margin: auto; 
+  padding: 2px; 
+  text-align: center; 
+  background-color: #f0f0f0; 
+  box-shadow: 50px 10px 30px rgba(185, 66, 66, 0.1); 
+  z-index: 100;
+  color:blue;
+  font-family: "Trirong", serif;
+ }
+
+
+
+
+
