@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Visualizing Antibiotic Action</h1>
+    <div id="mechanism">
+      <div id="cell">
+        <div id="folic-acid-star">★</div>
+        <div id="dna-integrity-star">★</div>
+        <div id="mrna-synthesis-star">★</div>
+        <div id="gryase-star">★</div>
+        <div id="protein-synthesis-star">★</div>
+        <div id="cell-wall-star">★</div>
+        <div id="membrane-integrity-star">★</div>
+      </div>
+    
+      <div id="DNA-integrity" class="mechanism-container">
+        DNA Integrity 
+        <div id="dna-pop-up"class="information-popup">
+          Metronidazole
+        </div>
+      </div>
+      <div id="mrna-synthesis" class="mechanism-container">
+        mRNA Synthesis 
+        <div id="mrna-pop-up" class="information-popup">
+          Rifampin
+        </div>
+      </div>
+      <div id="Gryase" class="mechanism-container">
+        Gyrase  
+        <div id="gyrase-pop-up"class="information-popup">
+          <div class="a">
+            Fluoroquinolones 
+          </div>
+          <ul>
+            <li>Ciprofloxacin</li>
+            <li>Levofloxacin</li>
+          </ul>
+          <div class="a">
+            Quinolone 
+          </div>
+          <ul>
+            <li>Nalidixic acid</li>
+          </ul>
+        </div>
+      </div>
+      <div id="protein-synthesis" class="mechanism-container">
+        Protein Synthesis 
+        <div id="protein-synthesis-pop-up" class="information-popup">
+          <div class="cell-wall">50S SUBUNIT</div>
+          <div> 
+            Chloramphenicol
+          </div>
+          <div>
+            Clindamycin
+          </div>
+          <div>
+            Linezolid
+          </div>
+          <div class="a">
+            Macrolides 
+          </div>
+          <ul>
+            <li>Azithromycin</li>
+            <li>Clarithromycin</li>
+            <li>Erythromycin</li>
+          </ul>
+          <div class="a">
+            Streptogramins 
+          </div>
+          <ul>
+            <li>Quinupristin</li>
+            <li>Dalfopristin</li>
+          </ul>
+          <div class="cell-wall">30S SUBUNIT</div>
+          <div class="a">
+            Aminoglycosides 
+          </div>
+          <ul>
+            <li>Gentamicin</li>
+            <li>Neomycin</li>
+            <li>Amikacin</li>
+            <li>Tobramycin</li>
+            <li>Streptomycin</li>
+          </ul>
+          <div class="a">
+            Glycylcycline 
+          </div>
+          <ul>
+            <li>Tigecycline</li>
+          </ul>
+          <div class="a">
+            Tetracyclines 
+          </div>
+          <ul>
+            <li>Tetracycline</li>
+            <li>Doxycycline</li>
+            <li>Minocycline</li>
+          </ul>
+        </div>
+      </div>
+      <div id="membrane-integrity" class="mechanism-container">
+        Membrane Integrity 
+        <div id="membrane-integrity-pop-up" class="information-popup">
+          Daptomycin
+        </div>
+      </div>
+      <div id="folic-acid-synthesis-and-reduction" class="mechanism-container">
+      Folic Acid Synthesis and Reduction
+      <div class="information-popup">
+        <div class="a">
+          Sulfonamides 
+        </div>
+        <ul>
+          <li> Sulfamethoxazole</li>
+          <li>Sulfisoxazole</li>
+          <li>Sulfadiazine</li>
+        </ul>
+        Trimethoprim
+      </div>
+      
+    </div>
+    <div id="cell-wall-synthesis" class="mechanism-container">
+    Cell Wall Synthesis 
+    <div id="cell-wall-synthesis-pop-up" class="information-popup">
+      <div class="cell-wall">Peptidoglycan Synthesis</div>
+      <div class="a">
+        Glycopeptides
+      </div>
+      <ul>
+        <li>Vancomycin</li>
+        <li>Bacitracin</li>
+      </ul>
+      <div class="cell-wall">Peptidoglycan Cross-Linking</div>
+      <div class="a">
+        Penicillinase-Sensitive penicillins 
+      </div>
+      <ul>
+        <li>Penicillin G,V</li>
+        <li>Ampicillin</li>
+        <li>Amoxicillin</li>
+      </ul>
+      <div class="a">
+        Penicillinase-Resistant Penicillins
+      </div>
+      <ul>
+        <li>Oxacillin</li>
+        <li>Nafcillin</li>
+        <li>Dicloxacillin</li>
+      </ul>
+      <div class="a">
+        Antipseudomonal
+      </div>
+      <ul>
+        <li>Ticarcillin</li>
+        <li>Piperacillin</li>
+      </ul>
+      <div class="a">
+        Cephalosporins
+      </div>
+      <ul>
+        <li>1st Generation</li>
+        <li>2nd Generation</li>
+        <li>3rd Generation</li>
+        <li>4th Generation</li>
+        <li>5th Generation</li>
+      </ul>
+      <div class="a">
+        Carbapenems
+      </div>
+      <ul>
+        <li>Imipenem</li>
+        <li>Meropenem</li>
+        <li>Ertapenem</li>
+        <li>Doripenem</li>
+      </ul>
+      <div class="a">
+        Monobactams
+      </div>
+      <ul>
+        <li>Aztreonam</li>
+      </ul>
+    </div>
+  </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
