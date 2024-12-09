@@ -14,7 +14,7 @@ body {
   /* border: solid 10px rgb(255, 0, 212);
   border-radius: 40px; */
   /* Add image styling */
-  background-image: url('./assets/images/cell.png');
+  background-image: url('./cell.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
