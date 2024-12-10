@@ -40,14 +40,14 @@ body {
   display: none;
   position: absolute;
   top: 90%;
-  width: 200px;
+  width: 300px;
   min-height: 25px; 
   padding: 10px;
   border-radius: 5px;
   color: rgb(25, 74, 14);
   background-color: rgb(252, 240, 240);
   box-shadow: 0 2px 5px rgba(0, 204, 51);
-  max-height: 60vh;
+  max-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   white-space: nowrap;
