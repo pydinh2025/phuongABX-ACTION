@@ -39,7 +39,7 @@ body {
 .information-popup {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 90%;
   width: 150px;
   min-height: 25px; 
   padding: 10px;
